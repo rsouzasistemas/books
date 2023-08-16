@@ -15,6 +15,8 @@ Projeto de estudos, usando Tailwind, Sail (você precisa ter o Docker intalado!)
 - Digite: ./vendor/bin/sail up -d
 - Se preferir, crie um alias para o Sail com: alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 - Supondo que o alias foi criado (caso não, use ./vendor/bin/sail), digite: sail php artisan migrate --seed para criar as tabelas.
+- O hot-reload está configurado. Se quiser usá-lo, digite: sail npm run dev.
+- Caso não queira usar o hot-reload, digite: sail npm run build.
 
 O projeto está com scaffolding do Breeze, então na página principal, tem os links de login e registro.
 Além disso, inclui o PhpMyAdmin para facilitar a visualização de dados, depois de seguir as instruções acima, você pode acessar em:
