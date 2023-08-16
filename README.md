@@ -28,4 +28,8 @@ O acesso padrão ao banco de dados está configurado como:
 - User: sail
 - Password: password
 
+O acesso ao sistema, pode ser feito direto sem cadastro após a migration, usando os dados abaixo:
+- Usuário: admin@mail.com
+- Senha: 123123123
+
 OBS: Se preferir, altere os dados de acesso em .env antes de iniciar as imagens.
