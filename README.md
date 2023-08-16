@@ -7,18 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Books com Laravel 10.x
+## Books com Laravel 10.x, Sail e Tailwind CSS
 
-Projeto de estudos, usando Tailwind, Sail e Laravel 10, para executá-lo, siga as instruções abaixo:
+Projeto de estudos, usando Tailwind, Sail (você precisa ter o Docker intalado!) e Laravel 10, para executá-lo, siga as instruções abaixo:
 
 - Clone o projeto e entre na pasta do mesmo;
 - Digite: ./vendor/bin/sail up -d
 - Se preferir, crie um alias para o Sail com: alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-- Supondo que o alias foi criado (caso não, use ./vendor/bin/sail), digite: sail php artisan migrate para criar as tabelas.
+- Supondo que o alias foi criado (caso não, use ./vendor/bin/sail), digite: sail php artisan migrate --seed para criar as tabelas.
 
 O projeto está com scaffolding do Breeze, então na página principal, tem os links de login e registro.
 Além disso, inclui o PhpMyAdmin para facilitar a visualização de dados, depois de seguir as instruções acima, você pode acessar em:
-- Books: [http://localhost:8000](http://localhost:8000)
+- Books: [http://localhost](http://localhost)
 - PhpMyAdmin: [http://localhost:8080](http://localhost:8080)
 
 O acesso padrão ao banco de dados está configurado como:
@@ -27,6 +27,3 @@ O acesso padrão ao banco de dados está configurado como:
 - Password: password
 
 OBS: Se preferir, altere os dados de acesso em .env antes de iniciar as imagens.
-
-## Live Preview
-Se quiser ver o projeto rodando sem precisar cloná-lo, acesse [books.artedaweb.com.br](https://books.artedaweb.com.br).
